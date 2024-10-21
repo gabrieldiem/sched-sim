@@ -1,13 +1,31 @@
 # sched-sim
 
-Build with:
+A simple scheduler simulator with different scheduling policies.
 
-``` shell
+## Building and running
+
+Build the target with:
+
+```shell
 make
 ```
 
-Run with:
+Build the target with:
 
-``` shell
+```shell
 ./schedsimu
+```
+
+## Other commands
+
+Format the code with:
+
+```shell
+make format
+```
+
+Remove all binaries and .o files with:
+
+```shell
+make clean
 ```
