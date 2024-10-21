@@ -10,7 +10,7 @@ Build the target with:
 make
 ```
 
-Build the target with:
+Run the target with:
 
 ```shell
 ./schedsimu
