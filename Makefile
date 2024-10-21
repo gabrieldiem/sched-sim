@@ -4,6 +4,9 @@ CC = gcc
 # Compiler flags
 CFLAGS = -Wall -g
 
+# Linker flags (including math library)
+LDFLAGS = -lm
+
 # All .c files in the current directory
 SRCS = $(wildcard *.c)
 
@@ -18,7 +21,7 @@ all: $(TARGET)
 
 # Rule to link object files and create the executable
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET) $(LDFLAGS)
 
 # Rule to compile .c files into .o files
 %.o: %.c
