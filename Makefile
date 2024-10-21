@@ -31,5 +31,8 @@ $(TARGET): $(OBJS)
 clean:
 	rm -f $(OBJS) $(TARGET)
 
+format: .clang-files .clang-format
+	xargs -r clang-format -i <$<
+
 # Phony targets
-.PHONY: all clean
+.PHONY: all clean format
